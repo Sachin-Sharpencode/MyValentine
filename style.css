@@ -1,24 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Be My Valentine ❤️</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-<div class="container">
-    <h1>Will you be my Valentine? 💖</h1>
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
 
-    <div class="buttons">
-        <button id="yesBtn">Yes ❤️</button>
-        <button id="noBtn">No 😝</button>
-    </div>
+h1 {
+    margin-bottom: 30px;
+    color: #ff4b5c;
+}
 
-    <div id="message"></div>
-</div>
+.buttons {
+    position: relative;
+    height: 150px;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#yesBtn {
+    background-color: #ff4b5c;
+    color: white;
+}
+
+#noBtn {
+    background-color: #ddd;
+    position: absolute;
+    left: 60%;
+}
+
+#message {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #ff4b5c;
+    font-weight: bold;
+}
