@@ -1,53 +1,64 @@
 body {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
     font-family: 'Segoe UI', sans-serif;
     height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .container {
     background: white;
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 25px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
 }
 
 h1 {
+    color: #ff3366;
     margin-bottom: 30px;
-    color: #ff4b5c;
 }
 
 .buttons {
     position: relative;
-    height: 150px;
+    height: 160px;
 }
 
 button {
-    padding: 15px 30px;
+    padding: 15px 35px;
     font-size: 18px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    transition: 0.2s;
 }
 
 #yesBtn {
-    background-color: #ff4b5c;
+    background-color: #ff3366;
     color: white;
 }
 
 #noBtn {
-    background-color: #ddd;
+    background-color: #e0e0e0;
     position: absolute;
     left: 60%;
+    top: 40px;
 }
 
 #message {
-    margin-top: 30px;
+    margin-top: 25px;
     font-size: 22px;
-    color: #ff4b5c;
+    color: #ff3366;
     font-weight: bold;
+}
+
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }
